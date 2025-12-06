@@ -1,0 +1,22 @@
+artifact_path: /Users/knight_striker/Desktop/SPE-Project-NCA/mlruns/1/models/m-6d0f6d146b6340c388b7d991a04aaf59/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.7.0
+model_id: m-6d0f6d146b6340c388b7d991a04aaf59
+model_size_bytes: 54010
+model_uuid: m-6d0f6d146b6340c388b7d991a04aaf59
+prompts: null
+run_id: cd96ec94d6f64ae4b98e9cc2f2b893a4
+utc_time_created: '2025-12-06 21:38:36.629920'

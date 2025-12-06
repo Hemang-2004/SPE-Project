@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "name": "alert_model_20251206-194409",
+      "path": "models/alert_model_20251206-194409.joblib",
+      "created_at": "20251206-194409",
+      "acc": 0.735,
+      "prev_acc": 0.0,
+      "active": false
+    },
+    {
+      "name": "alert_gb_20251206-213836.joblib",
+      "path": "models/alert_gb_20251206-213836.joblib",
+      "model_type": "gb",
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "mlflow_run_id": "cd96ec94d6f64ae4b98e9cc2f2b893a4",
+      "created_at": "2025-12-06T21:38:38.980878",
+      "active": true
+    }
+  ]
+}
