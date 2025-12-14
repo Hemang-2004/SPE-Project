@@ -369,6 +369,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2
 function DashboardNav() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const [isScrolled, setIsScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [userName, setUserName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("User");
+    const [userEmail, setUserEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [isMounted, setIsMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const navItems = [
         {
             label: "Dashboard",
@@ -398,8 +401,107 @@ function DashboardNav() {
         window.addEventListener("scroll", handleScroll);
         return ()=>window.removeEventListener("scroll", handleScroll);
     }, []);
-    const userName = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "User";
-    const userEmail = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "";
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        setIsMounted(true);
+        const storedName = localStorage.getItem("userName");
+        const storedEmail = localStorage.getItem("userEmail");
+        if (storedName) setUserName(storedName);
+        if (storedEmail) setUserEmail(storedEmail);
+    }, []);
+    if (!isMounted) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+            className: "sticky top-0 z-50 border-b bg-background",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-4 py-4",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center justify-between",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/dashboard",
+                            className: "flex items-center gap-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    src: "/images/logo.png",
+                                    alt: "Logo",
+                                    width: 40,
+                                    height: 40,
+                                    className: "object-contain"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/dashboard-nav.tsx",
+                                    lineNumber: 50,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-xl font-bold",
+                                    children: [
+                                        "Simulafy",
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "bg-gradient-to-r from-accent via-destructive to-foreground bg-clip-text text-transparent",
+                                            children: "Me"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/dashboard-nav.tsx",
+                                            lineNumber: 53,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/dashboard-nav.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/dashboard-nav.tsx",
+                            lineNumber: 49,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "hidden lg:flex items-center gap-2",
+                            children: navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "px-4 py-2 rounded-lg",
+                                        children: item.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/dashboard-nav.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 19
+                                    }, this)
+                                }, item.href, false, {
+                                    fileName: "[project]/components/dashboard-nav.tsx",
+                                    lineNumber: 60,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/dashboard-nav.tsx",
+                            lineNumber: 58,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-10 h-10"
+                        }, void 0, false, {
+                            fileName: "[project]/components/dashboard-nav.tsx",
+                            lineNumber: 65,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/dashboard-nav.tsx",
+                    lineNumber: 48,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/dashboard-nav.tsx",
+                lineNumber: 47,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/dashboard-nav.tsx",
+            lineNumber: 46,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("sticky top-0 z-50 border-b transition-all duration-300", isScrolled ? "bg-background/80 backdrop-blur-lg" : "bg-background"),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -419,7 +521,7 @@ function DashboardNav() {
                                 className: "object-contain"
                             }, void 0, false, {
                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                lineNumber: 46,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -432,19 +534,19 @@ function DashboardNav() {
                                         children: "Me"
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-nav.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                lineNumber: 47,
+                                lineNumber: 84,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/dashboard-nav.tsx",
-                        lineNumber: 45,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,18 +563,18 @@ function DashboardNav() {
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/dashboard-nav.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 97,
                                     columnNumber: 19
                                 }, this)
                             }, item.href, false, {
                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                lineNumber: 59,
+                                lineNumber: 96,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard-nav.tsx",
-                        lineNumber: 55,
+                        lineNumber: 92,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -488,12 +590,12 @@ function DashboardNav() {
                                                 children: userName.charAt(0).toUpperCase()
                                             }, void 0, false, {
                                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 120,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-nav.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 119,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -501,18 +603,18 @@ function DashboardNav() {
                                             children: userName
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-nav.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 124,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/dashboard-nav.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 118,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                lineNumber: 80,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -527,7 +629,7 @@ function DashboardNav() {
                                                 children: userName
                                             }, void 0, false, {
                                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 129,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -535,13 +637,13 @@ function DashboardNav() {
                                                 children: userEmail
                                             }, void 0, false, {
                                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                                lineNumber: 93,
+                                                lineNumber: 130,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/dashboard-nav.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 128,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -551,12 +653,12 @@ function DashboardNav() {
                                             children: "Profile"
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-nav.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 133,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-nav.tsx",
-                                        lineNumber: 95,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -566,40 +668,40 @@ function DashboardNav() {
                                             children: "Logout"
                                         }, void 0, false, {
                                             fileName: "[project]/components/dashboard-nav.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 136,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/dashboard-nav.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 135,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/dashboard-nav.tsx",
-                                lineNumber: 90,
+                                lineNumber: 127,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/dashboard-nav.tsx",
-                        lineNumber: 79,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/dashboard-nav.tsx",
-                lineNumber: 43,
+                lineNumber: 80,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/dashboard-nav.tsx",
-            lineNumber: 42,
+            lineNumber: 79,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/dashboard-nav.tsx",
-        lineNumber: 36,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
@@ -1652,59 +1754,85 @@ function SimulationPage() {
     const handleRunSimulation = async ()=>{
         setIsRunning(true);
         try {
+            const userId = localStorage.getItem("userId");
             const twinId = localStorage.getItem("twinId");
-            if (!twinId) return;
+            if (!userId || !twinId) {
+                alert("Please login and create a digital twin first");
+                setIsRunning(false);
+                return;
+            }
             const response = await fetch(`${API_BASE}/api/simulation/run`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    twin_id: Number.parseInt(twinId),
-                    years,
-                    lifestyle_changes: {
+                    user_id: Number(userId),
+                    twin_id: Number(twinId),
+                    scenario_name: "future_health_simulation",
+                    duration_years: years,
+                    changes: {
                         increase_exercise: lifestyle.increaseExercise ? 1 : 0,
                         reduce_smoking: lifestyle.reduceSmoking ? 1 : 0,
                         better_sleep: lifestyle.betterSleep ? 1 : 0,
-                        diet_improvement: lifestyle.dietImprovement ? 1 : 0
-                    },
-                    environmental_factors: {
+                        diet_improvement: lifestyle.dietImprovement ? 1 : 0,
                         higher_pollution: environment.higherPollution ? 1 : 0,
                         work_stress: environment.workStress ? 1 : 0,
                         noise_exposure: environment.noiseExposure ? 1 : 0
                     }
                 })
             });
-            if (response.ok) {
-                const data = await response.json();
-                setResults(data);
+            if (!response.ok) {
+                throw new Error(`API error: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log("[v0] Raw API Response:", data);
+            // Backend returns: result_summary = {summary: {...}, curves: [...]}
+            // Curves contain: heart_score, mental_stress_score, organ_load_score, year
+            if (data.result_summary && data.result_summary.curves) {
+                const mappedTimeline = data.result_summary.curves.map((point)=>({
+                        year: point.year || 0,
+                        heart: Math.round((point.heart_score || 0.5) * 100),
+                        mental: Math.round((point.mental_stress_score || 0.5) * 100),
+                        organ: Math.round((point.organ_load_score || 0.5) * 100)
+                    }));
+                const finalState = data.result_summary.summary?.final_state || {};
+                const riskLevel = data.result_summary.summary?.risk_level || "safe";
+                setResults({
+                    timeline: mappedTimeline,
+                    final_organ_load: Math.round((finalState.organ_load_score || 0) * 100),
+                    risk_level: riskLevel
+                });
+                console.log("[v0] Mapped Results:", {
+                    timeline: mappedTimeline,
+                    final_organ_load: Math.round((finalState.organ_load_score || 0) * 100),
+                    risk_level: riskLevel
+                });
+            } else {
+                console.error("[v0] Invalid response structure:", data);
+                alert("Invalid simulation response. Check backend.");
             }
         } catch (error) {
-            console.error("Simulation failed", error);
-            const mockResults = {
-                years,
-                timeline: Array.from({
-                    length: years
-                }, (_, i)=>({
-                        year: i + 1,
-                        heart: 85 - i * 2 + (lifestyle.increaseExercise ? 5 : 0) - (environment.workStress ? 3 : 0),
-                        mental: 80 - i * 1.5 + (lifestyle.betterSleep ? 8 : 0) - (environment.workStress ? 5 : 0),
-                        organ: 20 + i * 2 + (environment.higherPollution ? 3 : 0) - (lifestyle.dietImprovement ? 5 : 0) + (lifestyle.reduceSmoking ? -3 : 0)
-                    })),
-                finalOrganLoad: 35,
-                riskLevel: "warning"
-            };
-            setResults(mockResults);
+            console.error("[v0] Simulation failed:", error);
+            alert("Simulation failed. Please check if backend is running.");
         } finally{
             setIsRunning(false);
         }
     };
+    const getLastTimelineValue = (key, defaultValue = 50)=>{
+        if (!results?.timeline || !Array.isArray(results.timeline) || results.timeline.length === 0) {
+            return defaultValue;
+        }
+        const lastItem = results.timeline[results.timeline.length - 1];
+        return lastItem?.[key] ?? defaultValue;
+    };
+    const hasResults = results && results.timeline && Array.isArray(results.timeline) && results.timeline.length > 0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$dashboard$2d$nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DashboardNav"], {}, void 0, false, {
                 fileName: "[project]/app/simulation/page.tsx",
-                lineNumber: 89,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1718,7 +1846,7 @@ function SimulationPage() {
                                 children: "Future Health Simulation"
                             }, void 0, false, {
                                 fileName: "[project]/app/simulation/page.tsx",
-                                lineNumber: 92,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1726,13 +1854,13 @@ function SimulationPage() {
                                 children: "What will happen to you?"
                             }, void 0, false, {
                                 fileName: "[project]/app/simulation/page.tsx",
-                                lineNumber: 93,
+                                lineNumber: 124,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/simulation/page.tsx",
-                        lineNumber: 91,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1749,12 +1877,12 @@ function SimulationPage() {
                                                     children: "Simulation Period"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 132,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 131,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1765,7 +1893,7 @@ function SimulationPage() {
                                                             children: "Number of Years"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 106,
+                                                            lineNumber: 136,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1777,7 +1905,7 @@ function SimulationPage() {
                                                             className: "bg-background/50 backdrop-blur-sm"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 107,
+                                                            lineNumber: 137,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1797,29 +1925,29 @@ function SimulationPage() {
                                                                     ]
                                                                 }, y, true, {
                                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                                    lineNumber: 117,
+                                                                    lineNumber: 147,
                                                                     columnNumber: 23
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 115,
+                                                            lineNumber: 145,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 105,
+                                                    lineNumber: 135,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 134,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/simulation/page.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 130,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -1833,12 +1961,12 @@ function SimulationPage() {
                                                     children: "Lifestyle Changes"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 129,
+                                                    lineNumber: 158,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 157,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1856,7 +1984,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 133,
+                                                                lineNumber: 162,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -1865,13 +1993,13 @@ function SimulationPage() {
                                                                 children: "💪 Increase Exercise"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 138,
+                                                                lineNumber: 167,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 132,
+                                                        lineNumber: 161,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1886,7 +2014,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 143,
+                                                                lineNumber: 172,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -1895,13 +2023,13 @@ function SimulationPage() {
                                                                 children: "🚭 Reduce Smoking"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 148,
+                                                                lineNumber: 177,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 142,
+                                                        lineNumber: 171,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1916,7 +2044,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 153,
+                                                                lineNumber: 182,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -1925,13 +2053,13 @@ function SimulationPage() {
                                                                 children: "😴 Better Sleep"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 158,
+                                                                lineNumber: 187,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 181,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1946,7 +2074,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 163,
+                                                                lineNumber: 192,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -1955,25 +2083,25 @@ function SimulationPage() {
                                                                 children: "🥗 Diet Improvement"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 168,
+                                                                lineNumber: 197,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 162,
+                                                        lineNumber: 191,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 160,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/simulation/page.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 156,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -1987,12 +2115,12 @@ function SimulationPage() {
                                                     children: "Environmental Factors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 178,
+                                                    lineNumber: 206,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 177,
+                                                lineNumber: 205,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2010,7 +2138,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 182,
+                                                                lineNumber: 210,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -2019,13 +2147,13 @@ function SimulationPage() {
                                                                 children: "🏭 Higher Pollution"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 189,
+                                                                lineNumber: 217,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 181,
+                                                        lineNumber: 209,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2040,7 +2168,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 194,
+                                                                lineNumber: 222,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -2049,13 +2177,13 @@ function SimulationPage() {
                                                                 children: "😰 Work Stress"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 199,
+                                                                lineNumber: 227,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 221,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2070,7 +2198,7 @@ function SimulationPage() {
                                                                     })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 204,
+                                                                lineNumber: 232,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -2079,25 +2207,25 @@ function SimulationPage() {
                                                                 children: "🔊 Noise Exposure"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 209,
+                                                                lineNumber: 237,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 203,
+                                                        lineNumber: 231,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 180,
+                                                lineNumber: 208,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/simulation/page.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 204,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2107,13 +2235,13 @@ function SimulationPage() {
                                         children: isRunning ? "Running Simulation..." : "Run Simulation"
                                     }, void 0, false, {
                                         fileName: "[project]/app/simulation/page.tsx",
-                                        lineNumber: 216,
+                                        lineNumber: 244,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/simulation/page.tsx",
-                                lineNumber: 98,
+                                lineNumber: 129,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2128,7 +2256,7 @@ function SimulationPage() {
                                                     className: "w-16 h-16 mx-auto mb-4 text-accent heartbeat-animation"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 226,
+                                                    lineNumber: 254,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2136,21 +2264,21 @@ function SimulationPage() {
                                                     children: "Analyzing your future health..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                    lineNumber: 227,
+                                                    lineNumber: 255,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/simulation/page.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 253,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/simulation/page.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, this),
-                                    results && !isRunning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    !isRunning && hasResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "grid grid-cols-3 gap-4",
@@ -2160,23 +2288,23 @@ function SimulationPage() {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                                                             className: "p-6 text-center",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$gauge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Gauge"], {
-                                                                value: results.timeline[results.timeline.length - 1].heart,
+                                                                value: getLastTimelineValue("heart", 75),
                                                                 max: 100,
                                                                 label: "Heart Health",
                                                                 color: "oklch(0.6 0.2 25)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 237,
+                                                                lineNumber: 265,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 236,
+                                                            lineNumber: 264,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 263,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -2187,23 +2315,23 @@ function SimulationPage() {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                                                             className: "p-6 text-center",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$gauge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Gauge"], {
-                                                                value: results.timeline[results.timeline.length - 1].mental,
+                                                                value: getLastTimelineValue("mental", 75),
                                                                 max: 100,
                                                                 label: "Mental Health",
                                                                 color: "oklch(0.6 0.15 240)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 248,
+                                                                lineNumber: 276,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 247,
+                                                            lineNumber: 275,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 246,
+                                                        lineNumber: 274,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -2214,29 +2342,29 @@ function SimulationPage() {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                                                             className: "p-6 text-center",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$gauge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Gauge"], {
-                                                                value: 100 - results.timeline[results.timeline.length - 1].organ,
+                                                                value: 100 - getLastTimelineValue("organ", 25),
                                                                 max: 100,
                                                                 label: "Organ Health",
                                                                 color: "oklch(0.75 0.15 85)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 259,
+                                                                lineNumber: 287,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 258,
+                                                            lineNumber: 286,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 257,
+                                                        lineNumber: 285,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 262,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -2250,12 +2378,12 @@ function SimulationPage() {
                                                             children: "Year-wise Health Projection"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 272,
+                                                            lineNumber: 299,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 271,
+                                                        lineNumber: 298,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2270,7 +2398,7 @@ function SimulationPage() {
                                                                         opacity: 0.1
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 277,
+                                                                        lineNumber: 304,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XAxis"], {
@@ -2282,7 +2410,7 @@ function SimulationPage() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 278,
+                                                                        lineNumber: 305,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
@@ -2293,17 +2421,17 @@ function SimulationPage() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 279,
+                                                                        lineNumber: 306,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {}, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 280,
+                                                                        lineNumber: 307,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Legend"], {}, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 281,
+                                                                        lineNumber: 308,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
@@ -2321,7 +2449,7 @@ function SimulationPage() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 282,
+                                                                        lineNumber: 309,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
@@ -2339,7 +2467,7 @@ function SimulationPage() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 292,
+                                                                        lineNumber: 319,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
@@ -2357,33 +2485,33 @@ function SimulationPage() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 302,
+                                                                        lineNumber: 329,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 276,
+                                                                lineNumber: 303,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 275,
+                                                            lineNumber: 302,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 274,
+                                                        lineNumber: 301,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 270,
+                                                lineNumber: 297,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                                className: `border-2 bg-card/80 backdrop-blur-sm fade-in-up ${results.riskLevel === "critical" ? "border-destructive shadow-lg shadow-destructive/20" : results.riskLevel === "warning" ? "border-warning shadow-lg shadow-warning/20" : "border-success shadow-lg shadow-success/20"}`,
+                                                className: `border-2 bg-card/80 backdrop-blur-sm fade-in-up ${results.risk_level === "critical" ? "border-destructive shadow-lg shadow-destructive/20" : results.risk_level === "warning" ? "border-warning shadow-lg shadow-warning/20" : "border-success shadow-lg shadow-success/20"}`,
                                                 style: {
                                                     animationDelay: "0.2s"
                                                 },
@@ -2393,12 +2521,12 @@ function SimulationPage() {
                                                             children: "Final Health Prediction"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/simulation/page.tsx",
-                                                            lineNumber: 329,
+                                                            lineNumber: 355,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 328,
+                                                        lineNumber: 354,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2412,21 +2540,21 @@ function SimulationPage() {
                                                                         children: "Final Organ Load Score"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 333,
+                                                                        lineNumber: 359,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-2xl font-bold text-warning",
-                                                                        children: results.finalOrganLoad
+                                                                        children: results.final_organ_load || 0
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 334,
+                                                                        lineNumber: 360,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 332,
+                                                                lineNumber: 358,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2437,78 +2565,109 @@ function SimulationPage() {
                                                                         children: "Risk Level"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 337,
+                                                                        lineNumber: 363,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: `text-2xl font-bold uppercase ${results.riskLevel === "critical" ? "text-destructive" : results.riskLevel === "warning" ? "text-warning" : "text-success"}`,
-                                                                        children: results.riskLevel
+                                                                        className: `text-2xl font-bold uppercase ${results.risk_level === "critical" ? "text-destructive" : results.risk_level === "warning" ? "text-warning" : "text-success"}`,
+                                                                        children: results.risk_level || "SAFE"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                                        lineNumber: 338,
+                                                                        lineNumber: 364,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 336,
+                                                                lineNumber: 362,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: `p-6 rounded-lg border-2 ${results.riskLevel === "critical" ? "border-destructive bg-destructive/10" : results.riskLevel === "warning" ? "border-warning bg-warning/10" : "border-success bg-success/10"}`,
+                                                                className: `p-6 rounded-lg border-2 ${results.risk_level === "critical" ? "border-destructive bg-destructive/10" : results.risk_level === "warning" ? "border-warning bg-warning/10" : "border-success bg-success/10"}`,
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-lg font-medium text-center",
                                                                     children: [
-                                                                        results.riskLevel === "critical" && `At current lifestyle, your ${years}-year risk is CRITICAL. Immediate lifestyle changes recommended.`,
-                                                                        results.riskLevel === "warning" && `At current lifestyle, your ${years}-year risk is MODERATE. Consider lifestyle improvements.`,
-                                                                        results.riskLevel === "safe" && `At current lifestyle, your ${years}-year risk is LOW. Keep up the good work!`
+                                                                        results.risk_level === "critical" && `At current lifestyle, your ${years}-year risk is CRITICAL. Immediate lifestyle changes recommended.`,
+                                                                        results.risk_level === "warning" && `At current lifestyle, your ${years}-year risk is MODERATE. Consider lifestyle improvements.`,
+                                                                        (!results.risk_level || results.risk_level === "safe") && `At current lifestyle, your ${years}-year risk is LOW. Keep up the good work!`
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/simulation/page.tsx",
-                                                                    lineNumber: 359,
+                                                                    lineNumber: 385,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                                lineNumber: 350,
+                                                                lineNumber: 376,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/simulation/page.tsx",
-                                                        lineNumber: 331,
+                                                        lineNumber: 357,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/simulation/page.tsx",
-                                                lineNumber: 318,
+                                                lineNumber: 344,
                                                 columnNumber: 17
                                             }, this)
                                         ]
-                                    }, void 0, true)
+                                    }, void 0, true),
+                                    !isRunning && !hasResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                                        className: "border-2 bg-card/80 backdrop-blur-sm",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                            className: "p-12 text-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$medical$2d$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ActivityIcon"], {
+                                                    className: "w-16 h-16 mx-auto mb-4 text-muted-foreground"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/simulation/page.tsx",
+                                                    lineNumber: 402,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-xl font-medium text-muted-foreground",
+                                                    children: 'Configure your simulation parameters and click "Run Simulation" to see your future health projection'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/simulation/page.tsx",
+                                                    lineNumber: 403,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/simulation/page.tsx",
+                                            lineNumber: 401,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/simulation/page.tsx",
+                                        lineNumber: 400,
+                                        columnNumber: 15
+                                    }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/simulation/page.tsx",
-                                lineNumber: 222,
+                                lineNumber: 250,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/simulation/page.tsx",
-                        lineNumber: 96,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/simulation/page.tsx",
-                lineNumber: 90,
+                lineNumber: 121,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/simulation/page.tsx",
-        lineNumber: 88,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }

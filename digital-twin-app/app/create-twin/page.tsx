@@ -26,7 +26,7 @@ import {
 } from "@/components/medical-icons"
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
 import { Check } from "lucide-react"
-import { google } from "google-maps"
+// import { google } from "google-maps"
 
 const API_BASE = "http://127.0.0.1:8000"
 

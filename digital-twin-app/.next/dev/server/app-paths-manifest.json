@@ -1,10 +1,12 @@
 {
   "/alerts/page": "app/alerts/page.js",
   "/calories/page": "app/calories/page.js",
+  "/create-twin/page": "app/create-twin/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/login/page": "app/login/page.js",
   "/mlops/page": "app/mlops/page.js",
   "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
   "/register/page": "app/register/page.js",
   "/simulation/page": "app/simulation/page.js"
 }

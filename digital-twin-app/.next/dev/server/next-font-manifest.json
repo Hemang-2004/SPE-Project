@@ -6,6 +6,9 @@
     "[project]/app/calories/page": [
       "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
     ],
+    "[project]/app/create-twin/page": [
+      "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
+    ],
     "[project]/app/dashboard/page": [
       "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
     ],
@@ -16,6 +19,9 @@
       "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
     ],
     "[project]/app/page": [
+      "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
+    ],
+    "[project]/app/profile/page": [
       "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
     ],
     "[project]/app/register/page": [

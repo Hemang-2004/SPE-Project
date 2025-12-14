@@ -1,38 +1,1866 @@
-[00:00:01.553] Server  LOG      ✓ Ready in 1274ms
-[00:00:08.251] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.438] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:08.438] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.438] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.438] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210478259}
-[00:00:19.887] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210489706}
-[00:00:24.540] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210494358}
-[00:00:25.968] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210495756}
-[00:00:31.055] Browser LOG     [v0] Login attempt for: Hemang.Seth@iiitb.ac.in
-[00:00:31.349] Browser LOG     [v0] User found: {"email":"Raju@raju.com","id":1,"name":"Raju"}
-[00:00:31.349] Browser LOG     [v0] Twin exists, redirecting to dashboard
-[00:00:33.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210503607}
-[00:00:43.637] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210513448}
-[00:00:49.315] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/calories color: rgb(120, 120, 120) color: inherit {"dp":"/calories","o":"http://localhost:3000/calories","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210518998}
-[00:00:51.278] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210521097}
-[00:01:43.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/calories color: rgb(120, 120, 120) color: inherit {"dp":"/calories","o":"http://localhost:3000/calories","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210573174}
-[00:01:53.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/mlops color: rgb(120, 120, 120) color: inherit {"dp":"/mlops","o":"http://localhost:3000/mlops","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210583684}
-[00:05:24.902] Browser ERROR   Failed to retrain health model {}
-[00:05:57.010] Browser ERROR   Failed to retrain health model {}
-[00:05:57.766] Browser ERROR   Failed to retrain health model {}
-[00:05:57.984] Browser ERROR   Failed to retrain health model {}
-[00:05:58.139] Browser ERROR   Failed to retrain health model {}
-[00:05:58.268] Browser ERROR   Failed to retrain health model {}
-[00:05:58.437] Browser ERROR   Failed to retrain health model {}
-[00:05:58.763] Browser ERROR   Failed to retrain health model {}
-[00:05:59.054] Browser ERROR   Failed to retrain health model {}
-[00:05:59.220] Browser ERROR   Failed to retrain health model {}
-[00:05:59.615] Browser ERROR   Failed to retrain health model {}
-[00:05:59.986] Browser ERROR   Failed to retrain health model {}
-[00:06:01.927] Browser ERROR   Failed to retrain health model {}
-[00:06:02.436] Browser ERROR   Failed to retrain health model {}
-[00:06:02.585] Browser ERROR   Failed to retrain health model {}
-[00:06:02.734] Browser ERROR   Failed to retrain health model {}
-[00:06:21.511] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/alerts color: rgb(120, 120, 120) color: inherit {"dp":"/alerts","o":"http://localhost:3000/alerts","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210850800}
-[00:06:21.957] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/calories color: rgb(120, 120, 120) color: inherit {"dp":"/calories","o":"http://localhost:3000/calories","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210851650}
-[00:06:23.475] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210853291}
-[00:06:24.591] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765210854410}
+[00:00:02.847] Server  LOG      ✓ Ready in 2.6s
+[00:00:08.000] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.269] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:09.269] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.269] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:09.269] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765722422871}
+[00:00:26.200] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765722440740}
+[00:00:57.779] Browser LOG     [v0] Submit attempt with data: {"email":"Shreyan.Gupta@iiitb.ac.in","name":"Shreyan"}
+[00:00:57.779] Browser LOG     [v0] Sending request to: http://127.0.0.1:8000/api/user/register
+[00:00:58.195] Browser LOG     [v0] Response status: 200
+[00:00:58.195] Browser LOG     [v0] Registration successful: {"email":"Shreyan.Gupta@iiitb.ac.in","id":2,"name":"Shreyan"}
+[00:00:58.545] Server  ERROR    ⨯ ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+
+
+
+./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+
+
+[00:00:58.703] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:58.703] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:58.703] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:58.703] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.326] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.326] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.326] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.326] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.880] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.880] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:00:59.965] Server  ERROR    ⨯ ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+
+
+
+./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+
+
+[00:01:00.523] Browser ERROR   uncaughtError: Error: ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+
+
+[00:01:00.741] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:01:00.741] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:01:01.099] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-client] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:01:01.099] Browser ERROR   ./app/create-twin/page.tsx:29:1
+Export google doesn't exist in target module
+  27 | import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api"
+  28 | import { Check } from "lucide-react"
+> 29 | import { google } from "google-maps"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |
+  31 | const API_BASE = "http://127.0.0.1:8000"
+  32 |
+
+The export google was not found in module [project]/node_modules/google-maps/lib/esm/index.js [app-ssr] (ecmascript).
+Did you mean to import Loader?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/create-twin/page.tsx [Client Component Browser]
+    ./app/create-twin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/create-twin/page.tsx [Client Component SSR]
+    ./app/create-twin/page.tsx [Server Component]
+[00:01:51.485] Server  LOG      ✓ Compiled in 154ms
+[00:01:51.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.267] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:52.267] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/create-twin","route":"/create-twin"}
+[00:01:52.267] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/create-twin color: rgb(120, 120, 120) color: inherit {"dp":"/create-twin","o":"http://localhost:3000/create-twin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765722526647}
+[00:02:53.998] Browser WARN    As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is not scheduled to be discontinued, but google.maps.marker.AdvancedMarkerElement is recommended over google.maps.Marker. While google.maps.Marker will continue to receive bug fixes for any major regressions, existing bugs in google.maps.Marker will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/deprecations for additional details and https://developers.google.com/maps/documentation/javascript/advanced-markers/migration for the migration guide.
+[00:03:03.183] Browser LOG     [v0] Creating twin with payload: {"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"cholesterol":50,"city":"Bangalore","commute_hours":6,"daily_steps":100000,"diastolic_bp":79,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":"male","height_cm":170,"income":1000000,"latitude":12.9716,"longitude":77.5946,"name":"Shreyan","outside_food_per_week":2,"resting_hr":72,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"spo2":99,"stress_level":2,"systolic_bp":118,"tea_coffee_per_day":0,"user_id":2,"weight_kg":80,"work_type":"field"}
+[00:03:03.183] Browser LOG     [v0] Twin creation response: 200
+[00:03:03.183] Browser LOG     [v0] Twin created successfully: {"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"cholesterol":50,"city":"Bangalore","commute_hours":6,"daily_steps":100000,"diastolic_bp":79,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":"male","heart_score":0.20934750370736532,"height_cm":170,"id":2,"income":1000000,"latitude":12.9716,"longitude":77.5946,"lung_risk_score":null,"mental_stress_score":0.55,"metabolic_score":0.15341571922886804,"name":"Shreyan","organ_load_score":0.3042544076454112,"outside_food_per_week":2,"resting_hr":72,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"spo2":99,"stress_level":2,"systolic_bp":118,"tea_coffee_per_day":0,"user_id":2,"weight_kg":80,"work_type":"field"}
+[00:03:04.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765722599253}
+[00:03:05.164] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:23.813] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765722618277}
+[00:08:32.871] Server  LOG      ✓ Compiled in 291ms
+[00:08:33.267] Browser ERROR   ./app/simulation/page.tsx:86:7
+Parsing ecmascript source code failed
+  84 |       }
+  85 |       setResults(mockResults)
+> 86 |     } finally {
+     |       ^^^^^^^
+  87 |       setIsRunning(false)
+  88 |     }
+  89 |   }
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./app/simulation/page.tsx [Client Component Browser]
+    ./app/simulation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/simulation/page.tsx [Client Component SSR]
+    ./app/simulation/page.tsx [Server Component]
+[00:08:42.287] Server  LOG      ✓ Compiled in 185ms
+[00:09:52.100] Server  LOG      ✓ Compiled in 130ms
+[00:09:53.269] Browser ERROR   ./app/simulation/page.tsx:113:3
+Parsing ecmascript source code failed
+  111 |
+  112 |
+> 113 |   return (
+      |   ^^^^^^^^
+> 114 |     <div className="min-h-screen">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 115 |       <DashboardNav />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 116 |       <div className="max-w-7xl mx-auto px-4 py-8">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 117 |         <div className="mb-8 fade-in-up">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 118 |           <h1 className="text-4xl font-bold mb-2">Future Health Simulation</h1>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 119 |           <p className="text-muted-foreground text-lg">What will happen to you?</p>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 120 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 121 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 122 |         <div className="grid lg:grid-cols-3 gap-6">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 123 |           {/* Simulation Controls */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 124 |           <div className="lg:col-span-1 space-y-6">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 125 |             {/* Years Input */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 126 |             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 127 |               <CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 128 |                 <CardTitle>Simulation Period</CardTitle>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 129 |               </CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 130 |               <CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 131 |                 <div className="space-y-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 132 |                   <Label>Number of Years</Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 133 |                   <Input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 134 |                     type="number"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 135 |                     min="1"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 136 |                     max="30"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 137 |                     value={years}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 138 |                     onChange={(e) => setYears(Number.parseInt(e.target.value) || 10)}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 139 |                     className="bg-background/50 backdrop-blur-sm"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 140 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 141 |                   <div className="flex gap-2 mt-3">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 142 |                     {[5, 10, 20].map((y) => (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 143 |                       <Button key={y} variant="outline" size="sm" onClick={() => setYears(y)} className="flex-1">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 144 |                         {y}y
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 145 |                       </Button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 146 |                     ))}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 147 |                   </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 148 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 149 |               </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 150 |             </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 151 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 152 |             {/* Lifestyle Changes */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 153 |             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.1s" }}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 154 |               <CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 155 |                 <CardTitle>Lifestyle Changes</CardTitle>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 156 |               </CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 157 |               <CardContent className="space-y-3">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 158 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 159 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 160 |                     id="exercise"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 161 |                     checked={lifestyle.increaseExercise}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 162 |                     onCheckedChange={(checked) => setLifestyle({ ...lifestyle, increaseExercise: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 163 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 164 |                   <Label htmlFor="exercise" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 165 |                     💪 Increase Exercise
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 166 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 167 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 168 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 169 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 170 |                     id="smoking"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 171 |                     checked={lifestyle.reduceSmoking}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 172 |                     onCheckedChange={(checked) => setLifestyle({ ...lifestyle, reduceSmoking: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 173 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 174 |                   <Label htmlFor="smoking" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 175 |                     🚭 Reduce Smoking
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 176 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 177 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 178 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 179 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 180 |                     id="sleep"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |                     checked={lifestyle.betterSleep}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |                     onCheckedChange={(checked) => setLifestyle({ ...lifestyle, betterSleep: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 183 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 184 |                   <Label htmlFor="sleep" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 185 |                     😴 Better Sleep
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 186 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 187 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 188 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 189 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 190 |                     id="diet"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 191 |                     checked={lifestyle.dietImprovement}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 192 |                     onCheckedChange={(checked) => setLifestyle({ ...lifestyle, dietImprovement: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 193 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 194 |                   <Label htmlFor="diet" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 195 |                     🥗 Diet Improvement
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 196 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 197 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 198 |               </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 199 |             </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 200 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 201 |             {/* Environmental Changes */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 202 |             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.2s" }}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 203 |               <CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 204 |                 <CardTitle>Environmental Factors</CardTitle>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 205 |               </CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 206 |               <CardContent className="space-y-3">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 207 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 208 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 209 |                     id="pollution"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 210 |                     checked={environment.higherPollution}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 211 |                     onCheckedChange={(checked) =>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 212 |                       setEnvironment({ ...environment, higherPollution: checked as boolean })
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 213 |                     }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 214 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 215 |                   <Label htmlFor="pollution" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 216 |                     🏭 Higher Pollution
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 217 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 218 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 219 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 220 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 221 |                     id="stress"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 222 |                     checked={environment.workStress}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 223 |                     onCheckedChange={(checked) => setEnvironment({ ...environment, workStress: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 224 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 225 |                   <Label htmlFor="stress" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 226 |                     😰 Work Stress
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 227 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 228 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 229 |                 <div className="flex items-center space-x-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 230 |                   <Checkbox
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 231 |                     id="noise"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 232 |                     checked={environment.noiseExposure}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 233 |                     onCheckedChange={(checked) => setEnvironment({ ...environment, noiseExposure: checked as boolean })}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 234 |                   />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 235 |                   <Label htmlFor="noise" className="cursor-pointer">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 236 |                     🔊 Noise Exposure
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 237 |                   </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 238 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 239 |               </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 240 |             </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 241 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 242 |             <Button onClick={handleRunSimulation} disabled={isRunning} className="w-full py-6 text-lg glow-border">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 243 |               {isRunning ? "Running Simulation..." : "Run Simulation"}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 244 |             </Button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 245 |           </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 246 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 247 |           {/* Results */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 248 |           <div className="lg:col-span-2 space-y-6">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 249 |             {isRunning && (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 250 |               <Card className="border-2 bg-card/80 backdrop-blur-sm">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 251 |                 <CardContent className="p-12 text-center">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 252 |                   <ActivityIcon className="w-16 h-16 mx-auto mb-4 text-accent heartbeat-animation" />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 253 |                   <p className="text-xl font-medium">Analyzing your future health...</p>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 254 |                 </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 255 |               </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 256 |             )}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 257 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 258 |             {results && !isRunning && (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 259 |               <>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 260 |                 <div className="grid grid-cols-3 gap-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 261 |                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 262 |                     <CardContent className="p-6 text-center">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 263 |                       <Gauge
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 264 |                         value={results.timeline[results.timeline.length - 1].heart}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 265 |                         max={100}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 266 |                         label="Heart Health"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 267 |                         color="oklch(0.6 0.2 25)"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 268 |                       />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 269 |                     </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 270 |                   </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 271 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 272 |                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.05s" }}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 273 |                     <CardContent className="p-6 text-center">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 274 |                       <Gauge
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 275 |                         value={results.timeline[results.timeline.length - 1].mental}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 276 |                         max={100}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 277 |                         label="Mental Health"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 278 |                         color="oklch(0.6 0.15 240)"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 279 |                       />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 280 |                     </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 281 |                   </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 282 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 283 |                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.1s" }}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 284 |                     <CardContent className="p-6 text-center">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 285 |                       <Gauge
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 286 |                         value={100 - results.timeline[results.timeline.length - 1].organ}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 287 |                         max={100}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |                         label="Organ Health"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 289 |                         color="oklch(0.75 0.15 85)"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 290 |                       />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 291 |                     </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 292 |                   </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 293 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 294 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 295 |                 {/* Health Curves */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 296 |                 <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.15s" }}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 297 |                   <CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 298 |                     <CardTitle>Year-wise Health Projection</CardTitle>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 299 |                   </CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 300 |                   <CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 301 |                     <ResponsiveContainer width="100%" height={350}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 302 |                       <LineChart data={results.timeline}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 303 |                         <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 304 |                         <XAxis dataKey="year" label={{ value: "Years", position: "insideBottom", offset: -5 }} />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 305 |                         <YAxis label={{ value: "Health Score", angle: -90, position: "insideLeft" }} />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 306 |                         <Tooltip />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 307 |                         <Legend />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 308 |                         <Line
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 309 |                           type="monotone"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 310 |                           dataKey="heart"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 311 |                           stroke="#ef4444"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 312 |                           strokeWidth={3}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 313 |                           name="Heart Health"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 314 |                           animationDuration={2000}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 315 |                           dot={{ r: 5 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 316 |                           activeDot={{ r: 8 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 317 |                         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 318 |                         <Line
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 319 |                           type="monotone"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 320 |                           dataKey="mental"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 321 |                           stroke="#3b82f6"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 322 |                           strokeWidth={3}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 323 |                           name="Mental Health"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 324 |                           animationDuration={2000}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 325 |                           dot={{ r: 5 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 326 |                           activeDot={{ r: 8 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 327 |                         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 328 |                         <Line
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 329 |                           type="monotone"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 330 |                           dataKey="organ"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 331 |                           stroke="#eab308"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 332 |                           strokeWidth={3}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 333 |                           name="Organ Load"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 334 |                           animationDuration={2000}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 335 |                           dot={{ r: 5 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 336 |                           activeDot={{ r: 8 }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 337 |                         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 338 |                       </LineChart>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 339 |                     </ResponsiveContainer>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 340 |                   </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 341 |                 </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 342 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 343 |                 {/* Final Verdict */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 344 |                 <Card
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 345 |                   className={`border-2 bg-card/80 backdrop-blur-sm fade-in-up ${
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 346 |                     results.riskLevel === "critical"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 347 |                       ? "border-destructive shadow-lg shadow-destructive/20"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 348 |                       : results.riskLevel === "warning"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 349 |                         ? "border-warning shadow-lg shadow-warning/20"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 350 |                         : "border-success shadow-lg shadow-success/20"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 351 |                   }`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 352 |                   style={{ animationDelay: "0.2s" }}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 353 |                 >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 354 |                   <CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 355 |                     <CardTitle>Final Health Prediction</CardTitle>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 356 |                   </CardHeader>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 357 |                   <CardContent className="space-y-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 358 |                     <div className="flex justify-between items-center p-4 bg-background/50 rounded-lg">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 359 |                       <span className="font-medium">Final Organ Load Score</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 360 |                       <span className="text-2xl font-bold text-warning">{results.finalOrganLoad}</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 361 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 362 |                     <div className="flex justify-between items-center p-4 bg-background/50 rounded-lg">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 363 |                       <span className="font-medium">Risk Level</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 364 |                       <span
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 365 |                         className={`text-2xl font-bold uppercase ${
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 366 |                           results.riskLevel === "critical"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 367 |                             ? "text-destructive"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 368 |                             : results.riskLevel === "warning"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 369 |                               ? "text-warning"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 370 |                               : "text-success"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 371 |                         }`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 372 |                       >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 373 |                         {results.riskLevel}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 374 |                       </span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 375 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 376 |                     <div
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 377 |                       className={`p-6 rounded-lg border-2 ${
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 378 |                         results.riskLevel === "critical"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 379 |                           ? "border-destructive bg-destructive/10"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 380 |                           : results.riskLevel === "warning"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 381 |                             ? "border-warning bg-warning/10"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 382 |                             : "border-success bg-success/10"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 383 |                       }`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 384 |                     >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 385 |                       <p className="text-lg font-medium text-center">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 386 |                         {results.riskLevel === "critical" &&
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 387 |                           `At current lifestyle, your ${years}-year risk is CRITICAL. Immediate lifestyle changes recommended.`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 388 |                         {results.riskLevel === "warning" &&
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 389 |                           `At current lifestyle, your ${years}-year risk is MODERATE. Consider lifestyle improvements.`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 390 |                         {results.riskLevel === "safe" &&
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |                           `At current lifestyle, your ${years}-year risk is LOW. Keep up the good work!`}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 392 |                       </p>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 393 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 394 |                   </CardContent>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 395 |                 </Card>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 396 |               </>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 397 |             )}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 398 |           </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 399 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 400 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 401 |     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 402 |   )
+      | ^^^^
+  403 | }
+  404 |
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./app/simulation/page.tsx [Client Component Browser]
+    ./app/simulation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/simulation/page.tsx [Client Component SSR]
+    ./app/simulation/page.tsx [Server Component]
+[00:09:56.252] Server  LOG      ✓ Compiled in 63ms
+[00:10:05.711] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[00:14:14.420] Server  LOG      ✓ Compiled in 528ms
+[00:14:14.455] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:15.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:16.270] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <Slot ref={function}>
+      <SlotClone ref={function}>
+        <Primitive.button type="button" id="radix-_R_r..." aria-haspopup="menu" aria-expanded={false} ...>
+          <Slot type="button" id="radix-_R_r..." aria-haspopup="menu" aria-expanded={false} aria-controls={undefined} ...>
+            <SlotClone type="button" id="radix-_R_r..." aria-haspopup="menu" aria-expanded={false} ...>
+              <button className="flex items..." type="button" id="radix-_R_r..." aria-haspopup="menu" ...>
+                <Avatar>
+                  <Avatar data-slot="avatar" className="relative f...">
+                    <AvatarProvider scope={undefined} imageLoadingStatus="idle" ...>
+                      <Primitive.span data-slot="avatar" className="relative f..." ref={null}>
+                        <span data-slot="avatar" className="relative f..." ref={null}>
+                          <AvatarFallback className="bg-accent ...">
+                            <AvatarFallback data-slot="avatar-fal..." className="flex size-...">
+                              <Primitive.span data-slot="avatar-fal..." className="flex size-..." ref={null}>
+                                <span
+                                  data-slot="avatar-fallback"
+                                  className="flex size-full items-center justify-center rounded-full bg-accent text-ac..."
+                                  ref={null}
+                                >
++                                 S
+-                                 U
+                ...
+
+[00:14:16.270] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:16.270] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:14:16.270] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:14:16.270] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723270420}
+[00:14:16.270] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723270420}
+[00:14:16.270] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:22.328] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":10}
+[00:14:22.435] Browser LOG     [v0] API Response: {"duration_years":10,"id":2,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10}],"summary":{"final_state":{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":10}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:16:04.012] Server  LOG      ✓ Compiled in 203ms
+[00:16:08.124] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":10}
+[00:16:08.124] Browser LOG     [v0] API Response: {"duration_years":10,"id":3,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10}],"summary":{"final_state":{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":10}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:16:15.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:15.978] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:15.978] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:15.978] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:16:15.978] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723390518}
+[00:16:20.749] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723395280}
+[00:16:22.845] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723397379}
+[00:16:28.307] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:16:28.307] Browser LOG     [v0] API Response: {"duration_years":5,"id":4,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:16:29.367] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:16:29.367] Browser LOG     [v0] API Response: {"duration_years":5,"id":5,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:18:38.091] Server  LOG      ✓ Compiled in 230ms
+[00:18:42.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:42.288] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:18:42.288] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:42.288] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:18:42.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723536828}
+[00:18:44.348] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723538885}
+[00:18:45.274] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723539798}
+[00:18:49.014] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:18:49.014] Browser LOG     [v0] Full API Response: {
+  "id": 6,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:18:49.014] Browser LOG     [v0] result_summary exists: true
+[00:18:49.014] Browser LOG     [v0] timeline exists: false
+[00:18:49.014] Browser LOG     [v0] timeline length: undefined
+[00:18:49.014] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:18:49.015] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:19:04.084] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/calories color: rgb(120, 120, 120) color: inherit {"dp":"/calories","o":"http://localhost:3000/calories","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723558393}
+[00:19:43.476] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/alerts color: rgb(120, 120, 120) color: inherit {"dp":"/alerts","o":"http://localhost:3000/alerts","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723598004}
+[00:20:00.862] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/mlops color: rgb(120, 120, 120) color: inherit {"dp":"/mlops","o":"http://localhost:3000/mlops","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723615389}
+[00:20:13.430] Browser ERROR   Failed to retrain health model {}
+[00:20:20.320] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765723634853}
+[00:20:26.328] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:26.328] Browser LOG     [v0] Full API Response: {
+  "id": 7,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:26.328] Browser LOG     [v0] result_summary exists: true
+[00:20:26.328] Browser LOG     [v0] timeline exists: false
+[00:20:26.328] Browser LOG     [v0] timeline length: undefined
+[00:20:26.328] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:26.328] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:26.931] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:26.931] Browser LOG     [v0] Full API Response: {
+  "id": 8,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:26.931] Browser LOG     [v0] result_summary exists: true
+[00:20:26.931] Browser LOG     [v0] timeline exists: false
+[00:20:26.931] Browser LOG     [v0] timeline length: undefined
+[00:20:26.931] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:26.931] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:27.377] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:27.377] Browser LOG     [v0] Full API Response: {
+  "id": 9,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:27.377] Browser LOG     [v0] result_summary exists: true
+[00:20:27.377] Browser LOG     [v0] timeline exists: false
+[00:20:27.377] Browser LOG     [v0] timeline length: undefined
+[00:20:27.377] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:27.377] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:27.531] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:27.531] Browser LOG     [v0] Full API Response: {
+  "id": 10,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:27.531] Browser LOG     [v0] result_summary exists: true
+[00:20:27.531] Browser LOG     [v0] timeline exists: false
+[00:20:27.531] Browser LOG     [v0] timeline length: undefined
+[00:20:27.531] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:27.531] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:27.674] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:27.674] Browser LOG     [v0] Full API Response: {
+  "id": 11,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:27.674] Browser LOG     [v0] result_summary exists: true
+[00:20:27.674] Browser LOG     [v0] timeline exists: false
+[00:20:27.674] Browser LOG     [v0] timeline length: undefined
+[00:20:27.674] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:27.674] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:27.821] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:27.821] Browser LOG     [v0] Full API Response: {
+  "id": 12,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:27.821] Browser LOG     [v0] result_summary exists: true
+[00:20:27.821] Browser LOG     [v0] timeline exists: false
+[00:20:27.821] Browser LOG     [v0] timeline length: undefined
+[00:20:27.821] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:27.821] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:20:30.228] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:20:30.228] Browser LOG     [v0] Full API Response: {
+  "id": 13,
+  "user_id": 2,
+  "twin_id": 2,
+  "scenario_name": "future_health_simulation",
+  "duration_years": 5,
+  "result_summary": {
+    "summary": {
+      "risk_level": "safe",
+      "final_state": {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      },
+      "years": 5,
+      "simulation_inputs": {
+        "age": 23,
+        "gender": 0,
+        "bmi": 27.68166089965398,
+        "sleep_hours": 8,
+        "exercise_level": 2,
+        "stress_level": 2,
+        "smoking": 0,
+        "alcohol": 1,
+        "screen_time_hours": 1,
+        "fasting_sugar": 95,
+        "systolic_bp": 118,
+        "cholesterol": 50,
+        "aqi": 90,
+        "daily_steps": 20000,
+        "income": 1000000,
+        "commute_hours": 6,
+        "ac_exposure_hours": 2,
+        "diet_type": "egg",
+        "outside_food_per_week": 2
+      }
+    },
+    "curves": [
+      {
+        "year": 1,
+        "heart_score": 0.22710017202174992,
+        "metabolic_score": 0.14727909045971332,
+        "mental_stress_score": 0.5808000000000001,
+        "organ_load_score": 0.330055181413742
+      },
+      {
+        "year": 2,
+        "heart_score": 0.21763766485417702,
+        "metabolic_score": 0.14114246169055858,
+        "mental_stress_score": 0.5566000000000001,
+        "organ_load_score": 0.31630288218816943
+      },
+      {
+        "year": 3,
+        "heart_score": 0.20817515768660408,
+        "metabolic_score": 0.1350058329214039,
+        "mental_stress_score": 0.5324000000000001,
+        "organ_load_score": 0.30255058296259685
+      },
+      {
+        "year": 4,
+        "heart_score": 0.19871265051903117,
+        "metabolic_score": 0.12886920415224914,
+        "mental_stress_score": 0.5082000000000001,
+        "organ_load_score": 0.28879828373702426
+      },
+      {
+        "year": 5,
+        "heart_score": 0.18925014335145826,
+        "metabolic_score": 0.12273257538309443,
+        "mental_stress_score": 0.48400000000000004,
+        "organ_load_score": 0.2750459845114517
+      }
+    ]
+  }
+}
+[00:20:30.228] Browser LOG     [v0] result_summary exists: true
+[00:20:30.228] Browser LOG     [v0] timeline exists: false
+[00:20:30.228] Browser LOG     [v0] timeline length: undefined
+[00:20:30.228] Browser LOG     [v0] Normalized Results: {"finalOrganLoad":0,"riskLevel":"safe","timeline":[]}
+[00:20:30.228] Browser LOG     [v0] Setting results state with timeline length: 0
+[00:23:09.572] Server  LOG      ✓ Compiled in 662ms
+[00:25:31.499] Server  LOG      ✓ Compiled in 438ms
+[00:25:39.795] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:39.796] Browser LOG     [v0] API Response: {"duration_years":5,"id":29,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:25:40.315] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:40.315] Browser LOG     [v0] API Response: {"duration_years":5,"id":30,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:25:40.619] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:40.619] Browser LOG     [v0] API Response: {"duration_years":5,"id":31,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:25:40.785] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:40.785] Browser LOG     [v0] API Response: {"duration_years":5,"id":32,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:25:40.949] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:40.949] Browser LOG     [v0] API Response: {"duration_years":5,"id":33,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:25:41.081] Browser LOG     [v0] Running simulation with: {"twinId":"2","userId":"2","years":5}
+[00:25:41.081] Browser LOG     [v0] API Response: {"duration_years":5,"id":34,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5}],"summary":{"final_state":{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":5}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:30:29.515] Server  LOG      ✓ Compiled in 555ms
+[00:30:37.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:38.188] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:30:38.188] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:38.188] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:30:38.188] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724252724}
+[00:30:44.638] Browser LOG     [v0] Raw API Response: {"duration_years":10,"id":35,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10}],"summary":{"final_state":{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":10}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:30:44.639] Browser LOG     [v0] Mapped Results: {"final_organ_load":21,"risk_level":"safe","timeline":[{"heart":23,"mental":58,"organ":33,"year":1},{"heart":22,"mental":56,"organ":32,"year":2},{"heart":21,"mental":53,"organ":30,"year":3},{"heart":20,"mental":51,"organ":29,"year":4},{"heart":19,"mental":48,"organ":28,"year":5},{"heart":18,"mental":46,"organ":26,"year":6},{"heart":17,"mental":44,"organ":25,"year":7},{"heart":16,"mental":41,"organ":23,"year":8},{"heart":15,"mental":39,"organ":22,"year":9},{"heart":14,"mental":36,"organ":21,"year":10}]}
+[00:30:59.248] Browser LOG     [v0] Raw API Response: {"duration_years":20,"id":36,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},{"heart_score":0.13247510034602078,"mental_stress_score":0.33880000000000005,"metabolic_score":0.0859128027681661,"organ_load_score":0.19253218915801618,"year":11},{"heart_score":0.12301259317844784,"mental_stress_score":0.3146,"metabolic_score":0.07977617399901137,"organ_load_score":0.17877988993244356,"year":12},{"heart_score":0.11355008601087493,"mental_stress_score":0.2904,"metabolic_score":0.07363954522985663,"organ_load_score":0.16502759070687098,"year":13},{"heart_score":0.10408757884330204,"mental_stress_score":0.2662,"metabolic_score":0.06750291646070193,"organ_load_score":0.15127529148129842,"year":14},{"heart_score":0.09462507167572912,"mental_stress_score":0.242,"metabolic_score":0.0613662876915472,"organ_load_score":0.1375229922557258,"year":15},{"heart_score":0.0851625645081562,"mental_stress_score":0.21779999999999997,"metabolic_score":0.055229658922392476,"organ_load_score":0.12377069303015323,"year":16},{"heart_score":0.07570005734058327,"mental_stress_score":0.19359999999999994,"metabolic_score":0.04909303015323775,"organ_load_score":0.11001839380458063,"year":17},{"heart_score":0.06623755017301035,"mental_stress_score":0.1693999999999999,"metabolic_score":0.04295640138408302,"organ_load_score":0.09626609457900802,"year":18},{"heart_score":0.05677504300543746,"mental_stress_score":0.14519999999999997,"metabolic_score":0.03681977261492831,"organ_load_score":0.08251379535343546,"year":19},{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20}],"summary":{"final_state":{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":20}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:30:59.249] Browser LOG     [v0] Mapped Results: {"final_organ_load":7,"risk_level":"safe","timeline":[{"heart":23,"mental":58,"organ":33,"year":1},{"heart":22,"mental":56,"organ":32,"year":2},{"heart":21,"mental":53,"organ":30,"year":3},{"heart":20,"mental":51,"organ":29,"year":4},{"heart":19,"mental":48,"organ":28,"year":5},{"heart":18,"mental":46,"organ":26,"year":6},{"heart":17,"mental":44,"organ":25,"year":7},{"heart":16,"mental":41,"organ":23,"year":8},{"heart":15,"mental":39,"organ":22,"year":9},{"heart":14,"mental":36,"organ":21,"year":10},{"heart":13,"mental":34,"organ":19,"year":11},{"heart":12,"mental":31,"organ":18,"year":12},{"heart":11,"mental":29,"organ":17,"year":13},{"heart":10,"mental":27,"organ":15,"year":14},{"heart":9,"mental":24,"organ":14,"year":15},{"heart":9,"mental":22,"organ":12,"year":16},{"heart":8,"mental":19,"organ":11,"year":17},{"heart":7,"mental":17,"organ":10,"year":18},{"heart":6,"mental":15,"organ":8,"year":19},{"heart":5,"mental":12,"organ":7,"year":20}]}
+[00:31:08.526] Browser LOG     [v0] Raw API Response: {"duration_years":20,"id":37,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},{"heart_score":0.13247510034602078,"mental_stress_score":0.33880000000000005,"metabolic_score":0.0859128027681661,"organ_load_score":0.19253218915801618,"year":11},{"heart_score":0.12301259317844784,"mental_stress_score":0.3146,"metabolic_score":0.07977617399901137,"organ_load_score":0.17877988993244356,"year":12},{"heart_score":0.11355008601087493,"mental_stress_score":0.2904,"metabolic_score":0.07363954522985663,"organ_load_score":0.16502759070687098,"year":13},{"heart_score":0.10408757884330204,"mental_stress_score":0.2662,"metabolic_score":0.06750291646070193,"organ_load_score":0.15127529148129842,"year":14},{"heart_score":0.09462507167572912,"mental_stress_score":0.242,"metabolic_score":0.0613662876915472,"organ_load_score":0.1375229922557258,"year":15},{"heart_score":0.0851625645081562,"mental_stress_score":0.21779999999999997,"metabolic_score":0.055229658922392476,"organ_load_score":0.12377069303015323,"year":16},{"heart_score":0.07570005734058327,"mental_stress_score":0.19359999999999994,"metabolic_score":0.04909303015323775,"organ_load_score":0.11001839380458063,"year":17},{"heart_score":0.06623755017301035,"mental_stress_score":0.1693999999999999,"metabolic_score":0.04295640138408302,"organ_load_score":0.09626609457900802,"year":18},{"heart_score":0.05677504300543746,"mental_stress_score":0.14519999999999997,"metabolic_score":0.03681977261492831,"organ_load_score":0.08251379535343546,"year":19},{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20}],"summary":{"final_state":{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":20}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:31:08.527] Browser LOG     [v0] Mapped Results: {"final_organ_load":7,"risk_level":"safe","timeline":[{"heart":23,"mental":58,"organ":33,"year":1},{"heart":22,"mental":56,"organ":32,"year":2},{"heart":21,"mental":53,"organ":30,"year":3},{"heart":20,"mental":51,"organ":29,"year":4},{"heart":19,"mental":48,"organ":28,"year":5},{"heart":18,"mental":46,"organ":26,"year":6},{"heart":17,"mental":44,"organ":25,"year":7},{"heart":16,"mental":41,"organ":23,"year":8},{"heart":15,"mental":39,"organ":22,"year":9},{"heart":14,"mental":36,"organ":21,"year":10},{"heart":13,"mental":34,"organ":19,"year":11},{"heart":12,"mental":31,"organ":18,"year":12},{"heart":11,"mental":29,"organ":17,"year":13},{"heart":10,"mental":27,"organ":15,"year":14},{"heart":9,"mental":24,"organ":14,"year":15},{"heart":9,"mental":22,"organ":12,"year":16},{"heart":8,"mental":19,"organ":11,"year":17},{"heart":7,"mental":17,"organ":10,"year":18},{"heart":6,"mental":15,"organ":8,"year":19},{"heart":5,"mental":12,"organ":7,"year":20}]}
+[00:31:33.138] Browser LOG     [v0] Raw API Response: {"duration_years":20,"id":38,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},{"heart_score":0.13247510034602078,"mental_stress_score":0.33880000000000005,"metabolic_score":0.0859128027681661,"organ_load_score":0.19253218915801618,"year":11},{"heart_score":0.12301259317844784,"mental_stress_score":0.3146,"metabolic_score":0.07977617399901137,"organ_load_score":0.17877988993244356,"year":12},{"heart_score":0.11355008601087493,"mental_stress_score":0.2904,"metabolic_score":0.07363954522985663,"organ_load_score":0.16502759070687098,"year":13},{"heart_score":0.10408757884330204,"mental_stress_score":0.2662,"metabolic_score":0.06750291646070193,"organ_load_score":0.15127529148129842,"year":14},{"heart_score":0.09462507167572912,"mental_stress_score":0.242,"metabolic_score":0.0613662876915472,"organ_load_score":0.1375229922557258,"year":15},{"heart_score":0.0851625645081562,"mental_stress_score":0.21779999999999997,"metabolic_score":0.055229658922392476,"organ_load_score":0.12377069303015323,"year":16},{"heart_score":0.07570005734058327,"mental_stress_score":0.19359999999999994,"metabolic_score":0.04909303015323775,"organ_load_score":0.11001839380458063,"year":17},{"heart_score":0.06623755017301035,"mental_stress_score":0.1693999999999999,"metabolic_score":0.04295640138408302,"organ_load_score":0.09626609457900802,"year":18},{"heart_score":0.05677504300543746,"mental_stress_score":0.14519999999999997,"metabolic_score":0.03681977261492831,"organ_load_score":0.08251379535343546,"year":19},{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20}],"summary":{"final_state":{"heart_score":0.04731253583786453,"mental_stress_score":0.12099999999999991,"metabolic_score":0.030683143845773586,"organ_load_score":0.06876149612786286,"year":20},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":20}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:31:33.139] Browser LOG     [v0] Mapped Results: {"final_organ_load":7,"risk_level":"safe","timeline":[{"heart":23,"mental":58,"organ":33,"year":1},{"heart":22,"mental":56,"organ":32,"year":2},{"heart":21,"mental":53,"organ":30,"year":3},{"heart":20,"mental":51,"organ":29,"year":4},{"heart":19,"mental":48,"organ":28,"year":5},{"heart":18,"mental":46,"organ":26,"year":6},{"heart":17,"mental":44,"organ":25,"year":7},{"heart":16,"mental":41,"organ":23,"year":8},{"heart":15,"mental":39,"organ":22,"year":9},{"heart":14,"mental":36,"organ":21,"year":10},{"heart":13,"mental":34,"organ":19,"year":11},{"heart":12,"mental":31,"organ":18,"year":12},{"heart":11,"mental":29,"organ":17,"year":13},{"heart":10,"mental":27,"organ":15,"year":14},{"heart":9,"mental":24,"organ":14,"year":15},{"heart":9,"mental":22,"organ":12,"year":16},{"heart":8,"mental":19,"organ":11,"year":17},{"heart":7,"mental":17,"organ":10,"year":18},{"heart":6,"mental":15,"organ":8,"year":19},{"heart":5,"mental":12,"organ":7,"year":20}]}
+[00:31:38.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:38.726] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:31:38.726] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:31:38.726] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/simulation","route":"/simulation"}
+[00:31:38.726] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/simulation color: rgb(120, 120, 120) color: inherit {"dp":"/simulation","o":"http://localhost:3000/simulation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724313262}
+[00:31:44.447] Browser LOG     [v0] Raw API Response: {"duration_years":10,"id":39,"result_summary":{"curves":[{"heart_score":0.22710017202174992,"mental_stress_score":0.5808000000000001,"metabolic_score":0.14727909045971332,"organ_load_score":0.330055181413742,"year":1},{"heart_score":0.21763766485417702,"mental_stress_score":0.5566000000000001,"metabolic_score":0.14114246169055858,"organ_load_score":0.31630288218816943,"year":2},{"heart_score":0.20817515768660408,"mental_stress_score":0.5324000000000001,"metabolic_score":0.1350058329214039,"organ_load_score":0.30255058296259685,"year":3},{"heart_score":0.19871265051903117,"mental_stress_score":0.5082000000000001,"metabolic_score":0.12886920415224914,"organ_load_score":0.28879828373702426,"year":4},{"heart_score":0.18925014335145826,"mental_stress_score":0.48400000000000004,"metabolic_score":0.12273257538309443,"organ_load_score":0.2750459845114517,"year":5},{"heart_score":0.17978763618388538,"mental_stress_score":0.4598000000000001,"metabolic_score":0.11659594661393971,"organ_load_score":0.2612936852858791,"year":6},{"heart_score":0.17032512901631244,"mental_stress_score":0.43560000000000004,"metabolic_score":0.11045931784478498,"organ_load_score":0.24754138606030654,"year":7},{"heart_score":0.1608626218487395,"mental_stress_score":0.41140000000000004,"metabolic_score":0.10432268907563026,"organ_load_score":0.2337890868347339,"year":8},{"heart_score":0.15140011468116657,"mental_stress_score":0.3872,"metabolic_score":0.09818606030647553,"organ_load_score":0.22003678760916134,"year":9},{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10}],"summary":{"final_state":{"heart_score":0.14193760751359366,"mental_stress_score":0.363,"metabolic_score":0.0920494315373208,"organ_load_score":0.20628448838358873,"year":10},"risk_level":"safe","simulation_inputs":{"ac_exposure_hours":2,"age":23,"alcohol":1,"aqi":90,"bmi":27.68166089965398,"cholesterol":50,"commute_hours":6,"daily_steps":20000,"diet_type":"egg","exercise_level":2,"fasting_sugar":95,"gender":0,"income":1000000,"outside_food_per_week":2,"screen_time_hours":1,"sleep_hours":8,"smoking":0,"stress_level":2,"systolic_bp":118},"years":10}},"scenario_name":"future_health_simulation","twin_id":2,"user_id":2}
+[00:31:44.447] Browser LOG     [v0] Mapped Results: {"final_organ_load":21,"risk_level":"safe","timeline":[{"heart":23,"mental":58,"organ":33,"year":1},{"heart":22,"mental":56,"organ":32,"year":2},{"heart":21,"mental":53,"organ":30,"year":3},{"heart":20,"mental":51,"organ":29,"year":4},{"heart":19,"mental":48,"organ":28,"year":5},{"heart":18,"mental":46,"organ":26,"year":6},{"heart":17,"mental":44,"organ":25,"year":7},{"heart":16,"mental":41,"organ":23,"year":8},{"heart":15,"mental":39,"organ":22,"year":9},{"heart":14,"mental":36,"organ":21,"year":10}]}
+[00:33:06.586] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/calories color: rgb(120, 120, 120) color: inherit {"dp":"/calories","o":"http://localhost:3000/calories","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724401005}
+[00:33:12.683] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/profile color: rgb(120, 120, 120) color: inherit {"dp":"/profile","o":"http://localhost:3000/profile","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724407212}
+[00:33:15.644] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724410176}
+[00:33:16.944] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724411480}
+[00:33:20.632] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724415140}
+[00:33:29.584] Browser LOG     [v0] Login attempt for: Shreyan.Gupta@iiitb.ac.in
+[00:33:29.865] Browser LOG     [v0] User found: {"email":"Raju@raju.com","id":1,"name":"Raju"}
+[00:33:29.865] Browser LOG     [v0] Twin exists, redirecting to dashboard
+[00:33:30.126] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724424659}
+[00:34:25.324] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/mlops color: rgb(120, 120, 120) color: inherit {"dp":"/mlops","o":"http://localhost:3000/mlops","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765724479855}

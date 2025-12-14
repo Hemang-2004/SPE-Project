@@ -11,6 +11,9 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 export function DashboardNav() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
+  const [userName, setUserName] = useState("User")
+  const [userEmail, setUserEmail] = useState("")
+  const [isMounted, setIsMounted] = useState(false)
 
   const navItems = [
     { label: "Dashboard", href: "/dashboard" },
@@ -29,8 +32,42 @@ export function DashboardNav() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const userName = typeof window !== "undefined" ? localStorage.getItem("userName") || "User" : "User"
-  const userEmail = typeof window !== "undefined" ? localStorage.getItem("userEmail") || "" : ""
+  useEffect(() => {
+    setIsMounted(true)
+    const storedName = localStorage.getItem("userName")
+    const storedEmail = localStorage.getItem("userEmail")
+
+    if (storedName) setUserName(storedName)
+    if (storedEmail) setUserEmail(storedEmail)
+  }, [])
+
+  if (!isMounted) {
+    return (
+      <nav className="sticky top-0 z-50 border-b bg-background">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/dashboard" className="flex items-center gap-2">
+              <Image src="/images/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
+              <span className="text-xl font-bold">
+                Simulafy{" "}
+                <span className="bg-gradient-to-r from-accent via-destructive to-foreground bg-clip-text text-transparent">
+                  Me
+                </span>
+              </span>
+            </Link>
+            <div className="hidden lg:flex items-center gap-2">
+              {navItems.map((item) => (
+                <Link key={item.href} href={item.href}>
+                  <div className="px-4 py-2 rounded-lg">{item.label}</div>
+                </Link>
+              ))}
+            </div>
+            <div className="w-10 h-10" />
+          </div>
+        </div>
+      </nav>
+    )
+  }
 
   return (
     <nav

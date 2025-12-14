@@ -33,22 +33,28 @@ export default function SimulationPage() {
     setIsRunning(true)
 
     try {
+      const userId = localStorage.getItem("userId")
       const twinId = localStorage.getItem("twinId")
-      if (!twinId) return
+
+      if (!userId || !twinId) {
+        alert("Please login and create a digital twin first")
+        setIsRunning(false)
+        return
+      }
 
       const response = await fetch(`${API_BASE}/api/simulation/run`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          twin_id: Number.parseInt(twinId),
-          years,
-          lifestyle_changes: {
+          user_id: Number(userId),
+          twin_id: Number(twinId),
+          scenario_name: "future_health_simulation",
+          duration_years: years,
+          changes: {
             increase_exercise: lifestyle.increaseExercise ? 1 : 0,
             reduce_smoking: lifestyle.reduceSmoking ? 1 : 0,
             better_sleep: lifestyle.betterSleep ? 1 : 0,
             diet_improvement: lifestyle.dietImprovement ? 1 : 0,
-          },
-          environmental_factors: {
             higher_pollution: environment.higherPollution ? 1 : 0,
             work_stress: environment.workStress ? 1 : 0,
             noise_exposure: environment.noiseExposure ? 1 : 0,
@@ -56,33 +62,58 @@ export default function SimulationPage() {
         }),
       })
 
-      if (response.ok) {
-        const data = await response.json()
-        setResults(data)
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`)
+      }
+
+      const data = await response.json()
+      console.log("[v0] Raw API Response:", data)
+
+      // Backend returns: result_summary = {summary: {...}, curves: [...]}
+      // Curves contain: heart_score, mental_stress_score, organ_load_score, year
+      if (data.result_summary && data.result_summary.curves) {
+        const mappedTimeline = data.result_summary.curves.map((point: any) => ({
+          year: point.year || 0,
+          heart: Math.round((point.heart_score || 0.5) * 100), // Convert 0-1 to 0-100
+          mental: Math.round((point.mental_stress_score || 0.5) * 100),
+          organ: Math.round((point.organ_load_score || 0.5) * 100),
+        }))
+
+        const finalState = data.result_summary.summary?.final_state || {}
+        const riskLevel = data.result_summary.summary?.risk_level || "safe"
+
+        setResults({
+          timeline: mappedTimeline,
+          final_organ_load: Math.round((finalState.organ_load_score || 0) * 100),
+          risk_level: riskLevel,
+        })
+
+        console.log("[v0] Mapped Results:", {
+          timeline: mappedTimeline,
+          final_organ_load: Math.round((finalState.organ_load_score || 0) * 100),
+          risk_level: riskLevel,
+        })
+      } else {
+        console.error("[v0] Invalid response structure:", data)
+        alert("Invalid simulation response. Check backend.")
       }
     } catch (error) {
-      console.error("Simulation failed", error)
-      const mockResults = {
-        years,
-        timeline: Array.from({ length: years }, (_, i) => ({
-          year: i + 1,
-          heart: 85 - i * 2 + (lifestyle.increaseExercise ? 5 : 0) - (environment.workStress ? 3 : 0),
-          mental: 80 - i * 1.5 + (lifestyle.betterSleep ? 8 : 0) - (environment.workStress ? 5 : 0),
-          organ:
-            20 +
-            i * 2 +
-            (environment.higherPollution ? 3 : 0) -
-            (lifestyle.dietImprovement ? 5 : 0) +
-            (lifestyle.reduceSmoking ? -3 : 0),
-        })),
-        finalOrganLoad: 35,
-        riskLevel: "warning",
-      }
-      setResults(mockResults)
+      console.error("[v0] Simulation failed:", error)
+      alert("Simulation failed. Please check if backend is running.")
     } finally {
       setIsRunning(false)
     }
   }
+
+  const getLastTimelineValue = (key: string, defaultValue = 50) => {
+    if (!results?.timeline || !Array.isArray(results.timeline) || results.timeline.length === 0) {
+      return defaultValue
+    }
+    const lastItem = results.timeline[results.timeline.length - 1]
+    return lastItem?.[key] ?? defaultValue
+  }
+
+  const hasResults = results && results.timeline && Array.isArray(results.timeline) && results.timeline.length > 0
 
   return (
     <div className="min-h-screen">
@@ -96,7 +127,6 @@ export default function SimulationPage() {
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Simulation Controls */}
           <div className="lg:col-span-1 space-y-6">
-            {/* Years Input */}
             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up">
               <CardHeader>
                 <CardTitle>Simulation Period</CardTitle>
@@ -123,7 +153,6 @@ export default function SimulationPage() {
               </CardContent>
             </Card>
 
-            {/* Lifestyle Changes */}
             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.1s" }}>
               <CardHeader>
                 <CardTitle>Lifestyle Changes</CardTitle>
@@ -172,7 +201,6 @@ export default function SimulationPage() {
               </CardContent>
             </Card>
 
-            {/* Environmental Changes */}
             <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.2s" }}>
               <CardHeader>
                 <CardTitle>Environmental Factors</CardTitle>
@@ -229,13 +257,13 @@ export default function SimulationPage() {
               </Card>
             )}
 
-            {results && !isRunning && (
+            {!isRunning && hasResults && (
               <>
                 <div className="grid grid-cols-3 gap-4">
                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up">
                     <CardContent className="p-6 text-center">
                       <Gauge
-                        value={results.timeline[results.timeline.length - 1].heart}
+                        value={getLastTimelineValue("heart", 75)}
                         max={100}
                         label="Heart Health"
                         color="oklch(0.6 0.2 25)"
@@ -246,7 +274,7 @@ export default function SimulationPage() {
                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.05s" }}>
                     <CardContent className="p-6 text-center">
                       <Gauge
-                        value={results.timeline[results.timeline.length - 1].mental}
+                        value={getLastTimelineValue("mental", 75)}
                         max={100}
                         label="Mental Health"
                         color="oklch(0.6 0.15 240)"
@@ -257,7 +285,7 @@ export default function SimulationPage() {
                   <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.1s" }}>
                     <CardContent className="p-6 text-center">
                       <Gauge
-                        value={100 - results.timeline[results.timeline.length - 1].organ}
+                        value={100 - getLastTimelineValue("organ", 25)}
                         max={100}
                         label="Organ Health"
                         color="oklch(0.75 0.15 85)"
@@ -266,7 +294,6 @@ export default function SimulationPage() {
                   </Card>
                 </div>
 
-                {/* Health Curves */}
                 <Card className="border-2 bg-card/80 backdrop-blur-sm fade-in-up" style={{ animationDelay: "0.15s" }}>
                   <CardHeader>
                     <CardTitle>Year-wise Health Projection</CardTitle>
@@ -314,12 +341,11 @@ export default function SimulationPage() {
                   </CardContent>
                 </Card>
 
-                {/* Final Verdict */}
                 <Card
                   className={`border-2 bg-card/80 backdrop-blur-sm fade-in-up ${
-                    results.riskLevel === "critical"
+                    results.risk_level === "critical"
                       ? "border-destructive shadow-lg shadow-destructive/20"
-                      : results.riskLevel === "warning"
+                      : results.risk_level === "warning"
                         ? "border-warning shadow-lg shadow-warning/20"
                         : "border-success shadow-lg shadow-success/20"
                   }`}
@@ -331,43 +357,54 @@ export default function SimulationPage() {
                   <CardContent className="space-y-4">
                     <div className="flex justify-between items-center p-4 bg-background/50 rounded-lg">
                       <span className="font-medium">Final Organ Load Score</span>
-                      <span className="text-2xl font-bold text-warning">{results.finalOrganLoad}</span>
+                      <span className="text-2xl font-bold text-warning">{results.final_organ_load || 0}</span>
                     </div>
                     <div className="flex justify-between items-center p-4 bg-background/50 rounded-lg">
                       <span className="font-medium">Risk Level</span>
                       <span
                         className={`text-2xl font-bold uppercase ${
-                          results.riskLevel === "critical"
+                          results.risk_level === "critical"
                             ? "text-destructive"
-                            : results.riskLevel === "warning"
+                            : results.risk_level === "warning"
                               ? "text-warning"
                               : "text-success"
                         }`}
                       >
-                        {results.riskLevel}
+                        {results.risk_level || "SAFE"}
                       </span>
                     </div>
                     <div
                       className={`p-6 rounded-lg border-2 ${
-                        results.riskLevel === "critical"
+                        results.risk_level === "critical"
                           ? "border-destructive bg-destructive/10"
-                          : results.riskLevel === "warning"
+                          : results.risk_level === "warning"
                             ? "border-warning bg-warning/10"
                             : "border-success bg-success/10"
                       }`}
                     >
                       <p className="text-lg font-medium text-center">
-                        {results.riskLevel === "critical" &&
+                        {results.risk_level === "critical" &&
                           `At current lifestyle, your ${years}-year risk is CRITICAL. Immediate lifestyle changes recommended.`}
-                        {results.riskLevel === "warning" &&
+                        {results.risk_level === "warning" &&
                           `At current lifestyle, your ${years}-year risk is MODERATE. Consider lifestyle improvements.`}
-                        {results.riskLevel === "safe" &&
+                        {(!results.risk_level || results.risk_level === "safe") &&
                           `At current lifestyle, your ${years}-year risk is LOW. Keep up the good work!`}
                       </p>
                     </div>
                   </CardContent>
                 </Card>
               </>
+            )}
+
+            {!isRunning && !hasResults && (
+              <Card className="border-2 bg-card/80 backdrop-blur-sm">
+                <CardContent className="p-12 text-center">
+                  <ActivityIcon className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
+                  <p className="text-xl font-medium text-muted-foreground">
+                    Configure your simulation parameters and click "Run Simulation" to see your future health projection
+                  </p>
+                </CardContent>
+              </Card>
             )}
           </div>
         </div>
